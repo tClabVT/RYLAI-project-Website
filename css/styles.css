@@ -1,0 +1,167 @@
+
+body {
+  font-family: 'Montserrat';
+}
+
+#title {
+  background-color: #630031;
+  color: #fff;
+  padding-bottom: 30px;
+}
+
+.container-fluid{
+  padding: 3% 15%;
+}
+
+.vt-logo-image {
+  width: 30%;
+  margin: 20px;
+}
+
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-size: 2rem;
+  line-height: 1.5;
+}
+h3 {
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+img {
+   max-width: 75%;
+   height: auto;
+}
+
+#description {
+  text-align: justify;
+}
+
+#testimonials {
+  padding: 7% 15%;
+  text-align: center;
+  background-color: #630031;
+  color: #fff;
+}
+
+/* Optional: section background to match site style */
+#projects {
+  padding: 7% 15%;
+  background-color: #630031;
+  /* color: #fff */
+}
+#projects h1 {
+  color: #fff; /* white */
+}
+
+/* Card image crop for consistent heights */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* 2-line clamp for teasers */
+.clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#applications {
+  padding: 7% 15%;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 3%;
+}
+
+.icon {
+  color: #630031;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #CF4520;
+}
+
+
+#team .card .btn-outline-primary {
+  border-color: #630031;
+  color: #630031;
+}
+#team .card .btn-outline-primary:hover {
+  background-color: #630031;
+  color: #fff;
+}
+
+#team .btn-link {
+  color: #630031;
+  text-decoration: none;
+}
+#team .btn-link:hover {
+  text-decoration: underline;
+}
+
+.team-section {
+  padding: 7% 15%;
+  background-color: #f8f9fa;
+}
+
+.team-photo {
+  height: 150px;
+  object-fit: cover;
+  border-radius: 0%;
+  width: 220px;
+  margin: 20px auto 0; /* center in card */
+}
+
+.school-logo {
+  max-height: 200px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.school-logo:hover {
+  transform: scale(1.05);
+}
+
+
+#footer {
+  text-align: center;
+  background-color: #630031;
+  padding: 2%;
+  padding-bottom: 5px;
+}
+
+
+/* Figure in the each project website */
+.figure-overview {
+  width: 80%;           /* larger width */
+  max-width: 900px;
+  height: auto;
+  display: block;
+  margin: 0 auto;       /* center the image */
+}
+
+.figure-detail {
+  width: 60%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;  /* ensures the whole image is visible */
+}

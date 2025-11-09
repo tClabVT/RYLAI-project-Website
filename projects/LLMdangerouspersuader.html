@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>LLM Dangerous Persuader</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background:#630031;">
+    <a class="navbar-brand" href="../index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="../index.html#projects">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="py-5 text-white" style="background:#630031;">
+    <div class="container">
+      <h1 class="mb-3">LLM Dangerous Persuader</h1>
+      <p class="lead">LLM Can be a Dangerous Persuader: Empirical Study of Persuasion Safety in Large Language Models.</p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <!-- Overview image -->
+    <figure class="mb-4 text-center">
+      <img src="../images/llmpersuader/llmpersuader_1.png" alt="Overall research structure" class="figure-overview">
+      <figcaption class="text-muted mt-2">Overall research structure.</figcaption>
+    </figure>
+
+    <!-- Full description -->
+    <article class="mb-5">
+      <h2 class="h4">Full Description</h2>
+      <p>
+        Recent advancements in Large Language Models (LLMs) have enabled them to approach human-level persuasion capabilities. However, such potential also raises concerns about the safety risks of LLM-driven persuasion, particularly their potential for unethical influence through manipulation, deception, exploitation of vulnerabilities, and many other harmful tactics.
+      </p>
+      <p>
+        In this work, we present a systematic investigation of LLM persuasion safety through two critical aspects:
+        (1) whether LLMs appropriately reject unethical persuasion tasks and avoid unethical strategies during execution, including cases where the initial persuasion goal appears ethically neutral, and
+        (2) how influencing factors like personality traits and external pressures affect their behavior.
+      </p>
+      <p>
+        To this end, we introduce PERSUSAFETY, the first comprehensive framework for the assessment of persuasion safety, which consists of three stages, i.e., persuasion scene creation, persuasive conversation simulation, and persuasion safety assessment.
+        PERSUSAFETY covers 6 diverse unethical persuasion topics and 15 common unethical strategies.
+        Through extensive experiments across 8 widely used LLMs, we observe significant safety concerns in most LLMs, including failing to identify harmful persuasion tasks and leveraging various unethical persuasion strategies. Our study calls for more attention to improve safety alignment in progressive and goal-driven conversations such as persuasion.
+      </p>
+    </article>
+
+    <!-- Optional gallery/carousel of more figures -->
+    <h2 class="h4">Figures</h2>
+    <div id="proj-carousel" class="carousel slide mb-5" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active text-center">
+          <img src="../images/llmpersuader/llmpersuader_2.png" class="figure-detail" alt="Figure 1">
+        </div>
+        <div class="carousel-item text-center">
+          <img src="../images/llmpersuader/llmpersuader_3.png" class="figure-detail" alt="Figure 2">
+        </div>
+        <div class="carousel-item text-center">
+          <img src="../images/llmpersuader/llmpersuader_4.png" class="figure-detail" alt="Figure 3">
+        </div>
+
+      </div>
+      <a class="carousel-control-prev" href="#proj-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#proj-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+    <article class="mb-5">
+      <h2 class="h4">Publications</h2>
+      <p>
+        Minqian Liu, Zhiyang Xu, Xinyi Zhang, Heajun An, Sarvech Qadir, Qi Zhang, Pamela J. Wisniewski, Jin-Hee Cho, Sang Won Lee, Ruoxi Jia, Lifu Huang.
+        "LLM can be a dangerous persuader: Empirical study of persuasion safety in large language models." arXiv preprint arXiv:2504.10430 (2025).
+        Accepted by COLM 2025
+      </p>
+        Link: <a class="nav-link" href="https://arxiv.org/abs/2504.10430">Arxiv</a>
+    </article>
+
+    <a class="btn btn-outline-secondary" href="../index.html#projects">← Back to Projects</a>
+  </main>
+
+  <footer class="white-section" id="footer">
+      <p>@Copyright 2025 Qi Zhang</p>
+  </footer>
+
+</body>
+</html>

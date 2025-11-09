@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Stage Pilot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background:#630031;">
+    <a class="navbar-brand" href="../index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="../index.html#projects">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="py-5 text-white" style="background:#630031;">
+    <div class="container">
+      <h1 class="mb-3">Stage Pilot</h1>
+      <p class="lead">A Deep Reinforcement Learning Agent for Stage-Controlled Cybergrooming Simulatio.</p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <!-- Overview image -->
+    <figure class="mb-4 text-center">
+      <img src="../images/stagepilot/StagePilot_1.png" alt="Overall research structure" class="figure-overview">
+      <figcaption class="text-muted mt-2">Overall research structure.</figcaption>
+    </figure>
+
+    <!-- Full description -->
+    <article class="mb-5">
+      <h2 class="h4">Full Description</h2>
+      <p>
+        Cybergrooming remains a persistent and evolving threat to youth in online environments, highlighting the urgent need for scalable, proactive educational interventions.
+        We propose StagePilot, a reinforcement learning (RL)–based dialogue agent designed to simulate the stage-wise progression of grooming behaviors for prevention focused training.
+      </p>
+      <p>
+        The agent is trained via offline deep RL (DRL), where the policy selects the next conversational stage based on a reward function that jointly considers user sentiment and proximity to the final grooming stage. To maintain both interpretability and behavioral realism, stage transitions are constrained to adjacent stages. We evaluate StagePilot across multiple dimensions, including stage completion rate, dialogue length, and sentiment quality, using large language model (LLM)–based simulations to assess goal-directed planning and emotional engagement.
+      </p>
+      <p>
+        Experimental results show that StagePilot generates realistic, emotionally coherent conversations aligned with grooming dynamics, establishing a foundation for AI-driven educational tools aimed at increasing cybergrooming awareness. Among tested variants, our Implicit Q-Learning plus Advantage-Weighted Actor–Critic (IQL+AWAC) agent achieved the best balance between strategic progression and emotional coherence, reaching the final stage up to 43% more fre- quently than baselines while maintaining over 70% sentiment alignment. This framework provides a foundation for AI systems that promote digital safety through strategic behavior modeling.
+      </p>
+    </article>
+
+    <!-- Optional gallery/carousel of more figures -->
+    <h2 class="h4">Figures</h2>
+    <div id="proj-carousel" class="carousel slide mb-5" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active text-center">
+          <img src="../images/stagepilot/StagePilot_2.png" class="figure-detail" alt="Figure 1">
+        </div>
+        <div class="carousel-item text-center">
+          <img src="../images/stagepilot/StagePilot_3.png" class="figure-detail" alt="Figure 2">
+        </div>
+
+      </div>
+      <a class="carousel-control-prev" href="#proj-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#proj-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+    <article class="mb-5">
+      <h2 class="h4">Publications</h2>
+      <p>
+        Under double blind review.
+      </p>
+      <p>
+        Authors: Heajun An, Qi Zhang, Minqian Liu, Xinyi Zhang, Sang Won Lee, Lifu Hwang, Pamela Wisniewski and Jin-Hee Cho
+      </p>
+        Link: <a class="nav-link" href="https://zenodo.org/records/17290594">Artifacts</a>
+
+    </article>
+
+    <a class="btn btn-outline-secondary" href="../index.html#projects">← Back to Projects</a>
+  </main>
+
+  <footer class="white-section" id="footer">
+      <p>@Copyright 2025 Qi Zhang</p>
+  </footer>
+
+
+</body>
+</html>
