@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>X-EVAL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background:#630031;">
+    <a class="navbar-brand" href="../index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="../index.html#projects">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="py-5 text-white" style="background:#630031;">
+    <div class="container">
+      <h1 class="mb-3">X-EVAL</h1>
+      <p class="lead">Generalizable Multi-aspect Text Evaluation via Augmented Instruction Tuning with Auxiliary Evaluation Aspects.</p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <!-- Overview image -->
+    <figure class="mb-4 text-center">
+      <img src="../images/xeval/X-EVAL-2.png" alt="Overall research structure" class="figure-overview">
+      <figcaption class="text-muted mt-2">Overall research structure.</figcaption>
+    </figure>
+
+    <!-- Full description -->
+    <article class="mb-5">
+      <h2 class="h4">Full Description</h2>
+      <p>
+        Natural Language Generation (NLG) typically involves evaluating the generated text in various aspects (e.g., consistency and naturalness) to obtain a comprehensive assessment.
+        However, multi-aspect evaluation remains challenging as it may require the evaluator to generalize to any given evaluation aspect even if it’s absent during training.
+      </p>
+      <p>
+         In this paper, we introduce X-EVAL, a two-stage instruction tuning framework to evaluate text in both seen and unseen aspects customized by end users.
+         X-EVAL consists of two learning stages:
+         the vanilla instruction tuning stage that improves the model’s ability to follow evaluation instructions,
+         and an enhanced instruction tuning stage that exploits the connections between fine-grained evaluation aspects to better assess text quality.
+      </p>
+      <p>
+        To support the training of X-EVAL, we collect ASPECTINSTRUCT, the first instruction tuning dataset tailored for multi-aspect NLG evaluation spanning 27 diverse evaluation aspects with 65 tasks
+        Toenhancetask diversity, we devise an augmentation strategy that converts human rating annotations into diverse forms of NLG evaluation tasks, including scoring, comparison, ranking, and Boolean question answering.
+      </p>
+      <p>
+        Extensive experiments across three essential categories of NLG tasks: dialogue generation, summarization, and data-to-text coupled with 21 aspects in meta-evaluation,
+        demonstrate that X-EVAL enables even a lightweight language model to achieve a comparable if not higher correlation with human judgments compared to the stateof-the-art NLG evaluators like GPT-4.
+      </p>
+    </article>
+
+    <!-- Optional gallery/carousel of more figures -->
+    <h2 class="h4">Figures</h2>
+    <div id="proj-carousel" class="carousel slide mb-5" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active text-center">
+          <img src="../images/xeval/X-EVAL-1.png" class="figure-detail" alt="Figure 1">
+        </div>
+        <div class="carousel-item text-center">
+          <img src="../images/xeval/X-EVAL-3.png" class="figure-detail" alt="Figure 2">
+        </div>
+        <div class="carousel-item text-center">
+          <img src="../images/xeval/X-EVAL-4.png" class="figure-detail" alt="Figure 3">
+        </div>
+        <div class="carousel-item text-center">
+          <img src="../images/xeval/X-EVAL-5.png" class="figure-detail" alt="Figure 4">
+        </div>
+
+      </div>
+      <a class="carousel-control-prev" href="#proj-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#proj-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+    <article class="mb-5">
+      <h2 class="h4">Publications</h2>
+      <p>
+        Liu, Minqian, Ying Shen, Zhiyang Xu, Yixin Cao, Eunah Cho, Vaibhav Kumar, Reza Ghanadan, and Lifu Huang. "X-eval: Generalizable multi-aspect text evaluation via augmented instruction tuning with auxiliary evaluation aspects."
+        In Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers), pp. 8560-8579. 2024.
+      </p>
+        Link:
+        <a class="nav-link" href="https://aclanthology.org/2024.naacl-long.473.pdf">Paper</a>
+        <a class="nav-link" href="https://github.com/PLUM-Lab/XEval">Code</a>
+    </article>
+
+    <a class="btn btn-outline-secondary" href="../index.html#projects">← Back to Projects</a>
+  </main>
+
+  <footer class="white-section" id="footer">
+      <p>@Copyright 2025 Qi Zhang</p>
+  </footer>
+
+</body>
+</html>

@@ -13,11 +13,17 @@ body {
   padding: 3% 15%;
 }
 
-.vt-logo-image {
-  width: 30%;
+.nsf-logo-image {
+  width: 12%;
   margin: 20px;
 }
 
+.nav-link {
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: .2px;
+  opacity: 0.95;
+}
 
 h1 {
   font-family: 'Montserrat', sans-serif;
@@ -56,29 +62,33 @@ img {
   color: #fff;
 }
 
-/* Optional: section background to match site style */
 #projects {
   padding: 7% 15%;
   background-color: #630031;
-  /* color: #fff */
-}
-#projects h1 {
-  color: #fff; /* white */
+  /* color: #fff; */
 }
 
-/* Card image crop for consistent heights */
+#projects h1 {
+  color: #fff;
+}
+
 .card-img-top {
   height: 200px;
   object-fit: cover;
 }
 
-/* 2-line clamp for teasers */
 .clamp-2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.card-meta {
+  font-size: .9rem;
+  color: #6c757d;
+}
+
 
 #applications {
   padding: 7% 15%;
@@ -96,6 +106,11 @@ img {
 
 .icon:hover {
   color: #CF4520;
+}
+
+#impact {
+  padding: 7% 15%;
+  text-align: left;
 }
 
 

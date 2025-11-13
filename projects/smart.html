@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>SMART</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background:#630031;">
+    <a class="navbar-brand" href="../index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="../index.html#projects">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="py-5 text-white" style="background:#630031;">
+    <div class="container">
+      <h1 class="mb-3">SMART</h1>
+      <p class="lead">Sycophancy Mitigation Through Reinforcement Learning with Uncertainty-Aware Adaptive Reasoning Trajectories.</p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <!-- Overview image -->
+    <figure class="mb-4 text-center">
+      <img src="../images/smart/SMART_1.png" alt="Overall research structure" class="figure-overview">
+      <figcaption class="text-muted mt-2">Overall research structure.</figcaption>
+    </figure>
+
+    <!-- Full description -->
+    <article class="mb-5">
+      <h2 class="h4">Full Description</h2>
+      <p>
+        Despite the remarkable capabilities of large language models, current training paradigms inadvertently foster sycophancy, i.e., the tendency of a model to agree with or reinforce user-provided information even when it’s factually incorrect.
+      </p>
+      <p>
+        To address this challenge, we introduce SMART (Sycophancy Mitigation through Adaptive Reasoning Trajectories), which reframes sycophancy as a reasoning optimization problem rather than an output alignment issue.
+        SMART is a two-stage framework comprising:
+        (1) Uncertainty-Aware Adaptive Monte Carlo Tree Search (UA-MCTS), which dynamically adjusts model exploration based onstate-level uncertainty to collect high-quality, diverse reasoning trajectories alongside both stepwise progress and final outcome rewards;
+        and (2) progress-based reinforcement learning, which fine-tunes the model using the collected trajectories and reward signals to reinforce effective reasoning patterns.
+      </p>
+      <p>
+       Through extensive experiments, we show that SMART significantly reduces sycophantic behavior while preserving strong performance on out-of-distribution inputs and maintaining general capabilities.
+       These results underscore the importance of optimizing internal reasoning mechanisms to build more truthful and aligned AI assistants.
+        </p>
+    </article>
+
+    <!-- Optional gallery/carousel of more figures -->
+    <h2 class="h4">Figures</h2>
+    <div id="proj-carousel" class="carousel slide mb-5" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active text-center">
+          <img src="../images/smart/SMART_2.png" class="figure-detail" alt="Figure 1">
+        </div>
+        <div class="carousel-item text-center">
+          <img src="../images/smart/SMART_3.png" class="figure-detail" alt="Figure 2">
+        </div>
+        <div class="carousel-item text-center">
+          <img src="../images/smart/SMART_4.png" class="figure-detail" alt="Figure 3">
+        </div>
+
+      </div>
+      <a class="carousel-control-prev" href="#proj-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#proj-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+    <article class="mb-5">
+      <h2 class="h4">Publications</h2>
+      <p>
+      Beigi, Mohammad, Ying Shen, Parshin Shojaee, Qifan Wang, Zichao Wang, Chandan K. Reddy, Ming Jin, and Lifu Huang.
+      "Sycophancy Mitigation Through Reinforcement Learning with Uncertainty-Aware Adaptive Reasoning Trajectories."
+      In Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing, pp. 13090-13103. 2025.
+      </p>
+        Link:
+        <a class="nav-link" href="https://aclanthology.org/2025.emnlp-main.661.pdf">Paper</a>
+        <a class="nav-link" href="https://github.com/PLUM-Lab/sycophancy_mitigation">Code</a>
+    </article>
+
+    <a class="btn btn-outline-secondary" href="../index.html#projects">← Back to Projects</a>
+  </main>
+
+  <footer class="white-section" id="footer">
+      <p>@Copyright 2025 Qi Zhang</p>
+  </footer>
+
+</body>
+</html>
